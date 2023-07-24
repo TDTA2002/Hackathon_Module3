@@ -1,10 +1,11 @@
 import express from 'express';
 const router = express.Router();
 
-import userModule from './modules/user.module'
+import userModule from './modules/users.module'
 router.use('/users', userModule)
 
-import meoModule from './modules/meo.module'
-router.use('/meos', meoModule)
+
+import postModule from './modules/post.module'
+router.use('/posts', postModule)
 
 module.exports = router;

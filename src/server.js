@@ -17,9 +17,6 @@ server.use(bodyParser.json())
 import routerConfig from './routes';
 server.use('/api', routerConfig)
 
-/* Gọi cấu hình views */
-import viewConfig from './views';
-server.use(viewConfig);
 
 
 /* public folder domain/file */
